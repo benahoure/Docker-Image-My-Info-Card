@@ -8,6 +8,7 @@ RUN yum install httpd -y
 
 # Copy the index.html file into the web server's document root
 COPY index.html /var/www/html/
+COPY index.css /var/www/html/
 
 # Expose port 80
 EXPOSE 80
